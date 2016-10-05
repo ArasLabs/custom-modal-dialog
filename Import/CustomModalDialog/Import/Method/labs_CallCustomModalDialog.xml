@@ -1,0 +1,46 @@
+﻿<AML>
+ <Item type="Method" id="24E3426DF5584E058154AE74E8969AD8" action="add">
+  <comments>Call custom form in dialog, then do something based on returned parameters</comments>
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[// Aras Labs Project
+// Eli Donahue - 10/5/16
+//
+// Call a custom form in a modal dialog
+// Perform some action based on the values returned from dialog
+
+// get form
+var param = {};
+param.title	= "Test Dialog Parameter Passing";
+
+var formName = "labs_CustomModalDialogForm";
+var fetchForm = this.getInnovator().newItem("Form","get");
+fetchForm.setProperty("name",formName);
+fetchForm = fetchForm.apply("get"); 
+
+// check form for error
+if (fetchForm.isError())
+    return alert("Can't find a form called " + formName);
+
+// get form params
+param.formId = fetchForm.getID();
+param.aras = top.aras;
+param.item = this;
+var self = this;
+
+// call form in dialog
+var options = {dialogHeight:400, dialogWidth:800}; 
+var res = top.aras.modalDialogHelper.show("DefaultModal", window, param, options, "ShowFormAsADialog.html");
+
+// check whether values were returned from form dialog
+if (res === undefined)
+{
+    // dialog aborted, do something
+    return alert("Dialog aborted.");
+}
+
+// dialog succeeded, so something
+return alert("Param 1: " + res["param1"] + " ... Param 2: " + res["param2"]);]]></method_code>
+  <method_type>JavaScript</method_type>
+  <name>labs_CallCustomModalDialog</name>
+ </Item>
+</AML>

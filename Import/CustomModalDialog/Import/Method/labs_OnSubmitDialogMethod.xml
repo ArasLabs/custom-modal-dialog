@@ -1,0 +1,40 @@
+﻿<AML>
+ <Item type="Method" id="13859A53F6B1454182421F7CF3BE43CB" action="add">
+  <comments>Get field values to return to calling method</comments>
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[// Aras Labs Project
+// Eli Donahue - 10/5/16
+//
+// onClick field event for Submit button
+// Returns the form field values to the method that called the current dialog
+
+// get param1 field
+var wrapper1 = getFieldByName("param1");
+var p1 = wrapper1.getElementsByTagName("textarea")[0];
+
+// get param2 field
+var wrapper2 = getFieldByName("param2");
+var p2 = wrapper2.getElementsByTagName("input")[0];
+
+// confirm fields were correctly retrieved
+if (!p1){
+	alert("Can't find field param1");
+	return;
+}
+if (!p2){
+	alert("Can't find field param2");
+	return;
+}
+
+// return entered values
+var retVal = {};
+retVal["param1"] = p1.value;
+retVal["param2"] = p2.checked;
+
+parent.returnValue = retVal;
+window.close();
+]]></method_code>
+  <method_type>JavaScript</method_type>
+  <name>labs_OnSubmitDialogMethod</name>
+ </Item>
+</AML>

@@ -1,0 +1,3 @@
+<imports>
+  <package name="aras.labs.CustomModalDialog" path="CustomModalDialog\Import" />
+</imports>

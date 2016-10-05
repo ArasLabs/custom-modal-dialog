@@ -1,0 +1,15 @@
+﻿<AML>
+ <Item type="Action" id="A4CDEF0ABB314323BDE27F782C0DDA1C" action="add">
+  <item_query>&lt;Item type="{@type}" id="{@id}" levels= "1" action="get" /&gt;</item_query>
+  <label xml:lang="en">Open Custom Modal Dialog</label>
+  <location>client</location>
+  <method keyed_name="labs_CallCustomModalDialog" type="Method">
+   <Item type="Method" action="get" select="id">
+    <name>labs_CallCustomModalDialog</name>
+   </Item>
+  </method>
+  <target>none</target>
+  <type>item</type>
+  <name>labs_OpenCustomModalDialog</name>
+ </Item>
+</AML>

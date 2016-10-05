@@ -1,0 +1,8 @@
+<AML>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Part'"/>
+		</source_id>
+		<related_id>A4CDEF0ABB314323BDE27F782C0DDA1C</related_id>
+	</Item>
+</AML>
