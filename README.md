@@ -7,6 +7,8 @@ The Custom Modal Dialog project contains an import package that provides sample 
 **Built Using:** Aras 11.0 SP7
 **Browsers Tested:** Internet Explorer 11
 
+> Though built and tested using Aras 11.0 SP7, this project may function in older releases of Aras 11.0 and Aras 10.0.
+
 ## Installation
 
 #### Important!
@@ -53,4 +55,8 @@ The modal dialog will close and an alert will appear, showing the values of para
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
+For more information on contributing to this project, another Aras Labs project, or any Aras Community project, shoot us an email at araslabs@aras.com.
+
 ## License
+
+Aras Labs projects are published to Github under the MIT license. See the [LICENSE file](./LICENSE.md) for license rights and limitations.
