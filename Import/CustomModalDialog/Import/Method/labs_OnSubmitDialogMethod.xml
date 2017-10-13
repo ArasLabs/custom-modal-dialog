@@ -32,7 +32,7 @@ retVal["param1"] = p1.value;
 retVal["param2"] = p2.checked;
 
 parent.returnValue = retVal;
-window.close();
+parent.close();
 ]]></method_code>
   <method_type>JavaScript</method_type>
   <name>labs_OnSubmitDialogMethod</name>
