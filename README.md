@@ -2,12 +2,21 @@
 
 The Custom Modal Dialog project contains an import package that provides sample code for calling a custom Aras form in a modal dialog. The sample code also shows how data can be passed from the custom form back to the calling method.
 
-## Project Details
+## History
 
-**Built Using:** Aras 11.0 SP7
-**Browsers Tested:** Internet Explorer 11
+This project and the following release notes have been migrated from the old Aras Projects page.
 
-> Though built and tested using Aras 11.0 SP7, this project may function in older releases of Aras 11.0 and Aras 10.0.
+Release | Notes
+--------|--------
+[v2.0](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.0) | Updated to work with the Aras 11.0 SP9+ tabbed client.
+[v1.0](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v1.0) | First release. Though built and tested using Aras 11.0 SP7, this project may function in older releases of Aras 11.0 and Aras 10.0.
+
+#### Supported Aras Versions
+
+Project | Aras
+--------|------
+[v2.0](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.0) | 11.0 SP9
+[v1.0](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v1.0) | 11.0 SP7
 
 ## Installation
 
@@ -25,9 +34,9 @@ The Custom Modal Dialog project contains an import package that provides sample 
 1. Backup your database and store the BAK file in a safe place.
 2. Open up the Aras Package Import tool.
 3. Enter your login credentials and click **Login**
-  * _Note: You must login as root for the package import to succeed!_
+    * _Note: You must login as root for the package import to succeed!_
 4. Enter the package name in the TargetRelease field.
-  * Optional: Enter a description in the Description field.
+    * Optional: Enter a description in the Description field.
 5. Enter the path to your local `..\CustomModalDialog\Import\imports.mf` file in the Manifest File field.
 6. Select **aras.labs.CustomModalDialog** in the Available for Import field.
 7. Select Type = **Merge** and Mode = **Thorough Mode**.
@@ -38,12 +47,16 @@ You are now ready to login to Aras and try out a custom modal dialog.
 
 ## Usage
 
+![Custom model dialog](./Screenshots/dialog.png)
+
 1. Login to Aras.
 2. Navigate to **Design > Parts** in the table of contents (TOC).
 3. Right click on a Part item in the main grid and select **Open Custom Modal Dialog**.
 4. Enter some text into the Parameter 1 field.
-  * Optional: Select the Parameter 2 checkbox.
+    * Optional: Select the Parameter 2 checkbox.
 5. Click **Submit**.
+
+![Custom model dialog](./Screenshots/result.png)
 
 The modal dialog will close and an alert will appear, showing the values of param1 and param2 that were returned by the modal dialog.
 
@@ -56,6 +69,13 @@ The modal dialog will close and an alert will appear, showing the values of para
 5. Submit a pull request :D
 
 For more information on contributing to this project, another Aras Labs project, or any Aras Community project, shoot us an email at araslabs@aras.com.
+
+## Credits
+
+Created by Eli Donahue for Aras Labs. @EliJDonahue
+
+Contributions by:
+* @AngelaIp
 
 ## License
 
