@@ -1,4 +1,4 @@
-﻿<AML>
+<AML>
  <Item type="Method" id="13859A53F6B1454182421F7CF3BE43CB" action="add">
   <comments>Get field values to return to calling method</comments>
   <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
@@ -16,6 +16,10 @@ var p1 = wrapper1.getElementsByTagName("textarea")[0];
 var wrapper2 = getFieldByName("param2");
 var p2 = wrapper2.getElementsByTagName("input")[0];
 
+// get search result
+var wrapper3 = getFieldByName("searchResult");
+var p3 = wrapper3.getElementsByTagName("input")[0];
+
 // confirm fields were correctly retrieved
 if (!p1){
 	alert("Can't find field param1");
@@ -30,8 +34,8 @@ if (!p2){
 var retVal = {};
 retVal["param1"] = p1.value;
 retVal["param2"] = p2.checked;
-
-parent.returnValue = retVal;
+retVal["searchResult"] = p3.value;
+parent.returnValue = retVal; 
 parent.close();
 ]]></method_code>
   <method_type>JavaScript</method_type>
