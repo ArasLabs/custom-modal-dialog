@@ -10,6 +10,26 @@
     <sort_order>128</sort_order>
     <source_id keyed_name="labs_CustomModalDialogForm" type="Form">CF12EEC9E0C849AD8561F45339837D6D</source_id>
     <Relationships>
+     <Item type="Field" id="6B349B5C54D24865AF56A721D64FEF27" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>html</field_type>
+      <font_color>#000000</font_color>
+      <font_family>tahoma, arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <html_code> </html_code> 
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <sort_order>512</sort_order>
+      <source_id keyed_name="5051BFD61A9D4F829BA94E16E596537F" type="Body">5051BFD61A9D4F829BA94E16E596537F</source_id>
+      <tab_stop>1</tab_stop>
+      <x>10</x>
+      <y>10</y>
+      <name>html0</name>
+     </Item>
      <Item type="Field" id="96E29256D8464EB88DEC61B8EEF4D3EC" action="add">
       <border_width>0</border_width>
       <display_length_unit>px</display_length_unit>
