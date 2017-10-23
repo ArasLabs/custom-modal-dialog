@@ -8,6 +8,7 @@ This project and the following release notes have been migrated from the old Ara
 
 Release | Notes
 --------|--------
+[v2.1](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.1) | Removed item_info from dialog form
 [v2.0](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.0) | Updated to work with the Aras 11.0 SP9+ tabbed client.
 [v1.0](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v1.0) | First release. Though built and tested using Aras 11.0 SP7, this project may function in older releases of Aras 11.0 and Aras 10.0.
 
@@ -15,6 +16,7 @@ Release | Notes
 
 Project | Aras
 --------|------
+[v2.1](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.1) | 11.0 SP9
 [v2.0](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.0) | 11.0 SP9
 [v1.0](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v1.0) | 11.0 SP7
 
