@@ -1,4 +1,4 @@
-﻿<AML>
+<AML>
  <Item type="Method" id="24E3426DF5584E058154AE74E8969AD8" action="add">
   <comments>Call custom form in dialog, then do something based on returned parameters</comments>
   <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
@@ -33,7 +33,7 @@ var params = {
 
 var callback = function(res) {
     //Perform logic using dialog result here
-    return alert("Param 1: " + res["param1"] + " ... Param 2: " + res["param2"]);
+    return alert("Param 1: " + res["param1"] + " ... Param 2: " + res["param2"] + " ... Param 3: " + res["searchResult"]);
 }
 
 // call form in dialog

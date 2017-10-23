@@ -48,8 +48,8 @@
       <tab_stop>1</tab_stop>
       <textarea_cols>250</textarea_cols>
       <textarea_rows>50</textarea_rows>
-      <x>255</x>
-      <y>75</y>
+      <x>100</x>
+      <y>30</y>
       <name>param1</name>
      </Item>
      <Item type="Field" id="525A31E7FA884991B686D027AC8BD87B" action="add">
@@ -68,9 +68,61 @@
       <sort_order>768</sort_order>
       <source_id keyed_name="5051BFD61A9D4F829BA94E16E596537F" type="Body">5051BFD61A9D4F829BA94E16E596537F</source_id>
       <tab_stop>1</tab_stop>
-      <x>255</x>
-      <y>155</y>
+      <x>100</x>
+      <y>112</y>
       <name>param2</name>
+     </Item>
+     <Item type="Field" id="F20FD387B1E648A29D826A34A1AC1E05" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>button</field_type>
+      <font_color>#000000</font_color>
+      <font_family>tahoma, arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Search Parameter 3</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <sort_order>896</sort_order>
+      <source_id keyed_name="5051BFD61A9D4F829BA94E16E596537F" type="Body">5051BFD61A9D4F829BA94E16E596537F</source_id>
+      <tab_stop>1</tab_stop>
+      <x>451</x>
+      <y>37</y>
+      <name>searchDialog</name>
+      <Relationships>
+       <Item type="Field Event" id="3913C3E3AE1641D290FCEFEDF0929F54" action="add">
+        <field_event>onclick</field_event>
+        <related_id keyed_name="aip_CallSearchDialog" type="Method">
+         <Item type="Method" action="get" select="id">
+          <name>aip_CallSearchDialog</name>
+         </Item>
+        </related_id>
+        <sort_order>128</sort_order>
+        <source_id keyed_name="searchDialog" type="Field">F20FD387B1E648A29D826A34A1AC1E05</source_id>
+       </Item>
+      </Relationships>
+     </Item>
+     <Item type="Field" id="A2DC7E7FC71A4808ACDA82DB209BB14F" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>text</field_type>
+      <font_color>#000000</font_color>
+      <font_family>tahoma, arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>1</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Parameter 3</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <sort_order>1024</sort_order>
+      <source_id keyed_name="5051BFD61A9D4F829BA94E16E596537F" type="Body">5051BFD61A9D4F829BA94E16E596537F</source_id>
+      <tab_stop>1</tab_stop>
+      <x>451</x>
+      <y>70</y>
+      <name>searchResult</name>
      </Item>
      <Item type="Field" id="A5BD747B825946F0987A50146B596B4F" action="add">
       <border_width>0</border_width>
@@ -88,8 +140,8 @@
       <sort_order>384</sort_order>
       <source_id keyed_name="5051BFD61A9D4F829BA94E16E596537F" type="Body">5051BFD61A9D4F829BA94E16E596537F</source_id>
       <tab_stop>1</tab_stop>
-      <x>425</x>
-      <y>149</y>
+      <x>100</x>
+      <y>142</y>
       <name>submit</name>
       <Relationships>
        <Item type="Field Event" id="D7DE5F5ED4244B08AC8F8FD8390CF065" action="add">
