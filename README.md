@@ -76,6 +76,7 @@ Created by Eli Donahue for Aras Labs. @EliJDonahue
 
 Contributions by:
 * @AngelaIp
+* @mptap
 
 ## License
 
