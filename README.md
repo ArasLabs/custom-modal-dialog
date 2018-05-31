@@ -53,7 +53,9 @@ You are now ready to login to Aras and try out a custom modal dialog.
 
 ## Usage
 
-![Custom model dialog](./Screenshots/dialog.png)
+### Sample 1: Aras Modal Dialog
+
+![Custom modal dialog](./Screenshots/dialog.png)
 
 1. Login to Aras.
 2. Navigate to **Design > Parts** in the table of contents (TOC).
