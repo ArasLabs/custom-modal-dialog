@@ -1,0 +1,46 @@
+﻿<AML>
+ <Item type="Method" id="6AF7D8756C8C40BEB509F97E88DEAAD9" action="add">
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[// Aras Labs Project
+// Eli Donahue - 5/31/18
+//
+// Based on labs_CallCustomModalDialog
+// Call a custom form in a maximizable modal dialog
+// Perform some action based on the values returned from dialog
+
+var topWnd = aras.getMostTopWindowWithAras(window);
+topWnd = topWnd.main || topWnd;
+
+// get form
+var formName = "labs_CustomModalDialogForm";
+var fetchForm = this.getInnovator().newItem("Form","get");
+fetchForm.setProperty("name",formName);
+fetchForm = fetchForm.apply("get"); 
+
+// check form for error
+if (fetchForm.isError())
+    return alert("Can't find a form called " + formName);
+
+// get form params
+var params = {
+    title: 'Test Dialog Parameter Passing', 
+    formId: fetchForm.getID(),       // put your form's id here
+    aras: aras,
+    dialogWidth: 800,                // set width int
+    dialogHeight: 400,               // set height int
+    content: 'ShowFormAsADialog.html'
+};
+
+var callback = function(res) {
+    //Perform logic using dialog result here
+    return alert("Param 1: " + res["param1"] + " ... Param 2: " + res["param2"] + " ... Param 3: " + res["searchResult"]);
+}
+
+// call form in dialog
+topWnd.ArasModules.MaximazableDialog.show("iframe", params).promise.then(callback);
+
+return null;]]></method_code>
+  <method_type>JavaScript</method_type>
+  <name>labs_CallMaxModalDialog</name>
+ </Item>
+</AML>

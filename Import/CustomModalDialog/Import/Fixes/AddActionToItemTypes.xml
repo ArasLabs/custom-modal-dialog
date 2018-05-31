@@ -1,6 +1,11 @@
 <AML>
 	<Item type="Item Action" action="add" id="A3CB23B870D44D31A3BA9CF5C034DCC6">
-	 <related_id keyed_name="labs_OpenCustomModalDialog" type="Action">A4CDEF0ABB314323BDE27F782C0DDA1C</related_id>
-	 <source_id keyed_name="Part" type="ItemType" name="Part">4F1AC04A2B484F3ABA4E20DB63808A88</source_id>
- </Item>
+		<related_id keyed_name="labs_OpenCustomModalDialog" type="Action">A4CDEF0ABB314323BDE27F782C0DDA1C</related_id>
+		<source_id keyed_name="Part" type="ItemType" name="Part">4F1AC04A2B484F3ABA4E20DB63808A88</source_id>
+	</Item>
+	<Item type="Item Action" action="add" id="82481AFB9AE84F23AA59C09B512ECA8A">
+		<related_id keyed_name="labs_OpenMaxModalDialog" type="Action">0807F3255CFD45C092B8CA16D69897E6</related_id>
+		<source_id keyed_name="Part" type="ItemType" name="Part">4F1AC04A2B484F3ABA4E20DB63808A88</source_id>
+	</Item>
+</
 </AML>

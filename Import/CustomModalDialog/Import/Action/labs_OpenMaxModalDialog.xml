@@ -1,0 +1,15 @@
+﻿<AML>
+ <Item type="Action" id="0807F3255CFD45C092B8CA16D69897E6" action="add">
+  <item_query />
+  <label xml:lang="en">Open Maximizable Modal Dialog</label>
+  <location>client</location>
+  <method keyed_name="labs_CallMaxModalDialog" type="Method">
+   <Item type="Method" action="get" select="id">
+    <name>labs_CallMaxModalDialog</name>
+   </Item>
+  </method>
+  <target>none</target>
+  <type>item</type>
+  <name>labs_OpenMaxModalDialog</name>
+ </Item>
+</AML>
