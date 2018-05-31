@@ -17,7 +17,7 @@ Release | Notes
 
 Project | Aras
 --------|------
-[v2.2](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.2) | 11.0 SP9
+[v2.2](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.2) | 11.0 SP9, 11.0 SP12
 [v2.1](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.1) | 11.0 SP9
 [v2.0](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.0) | 11.0 SP9
 [v1.0](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v1.0) | 11.0 SP7
