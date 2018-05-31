@@ -8,19 +8,21 @@ This project and the following release notes have been migrated from the old Ara
 
 Release | Notes
 --------|--------
-[v2.2](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.2) | Added field to demonstrate use of search dialog. Clicking the "Search Parameter 3" button programmatically calls the default Aras search dialog. Allows the user to search for a Part and populate the "Parameter 3" field with their selection.
-[v2.1](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.1) | Removed item_info from dialog form
-[v2.0](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.0) | Updated to work with the Aras 11.0 SP9+ tabbed client.
-[v1.0](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v1.0) | First release. Though built and tested using Aras 11.0 SP7, this project may function in older releases of Aras 11.0 and Aras 10.0.
+[v2.3](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.3) | Added a new action/method to demonstrate how to call a dialog that can be maximized. Tested in 11 SP12, but may work in 11 SP9-11.
+[v2.2](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.2) | Added field to demonstrate use of search dialog. Clicking the "Search Parameter 3" button programmatically calls the default Aras search dialog. Allows the user to search for a Part and populate the "Parameter 3" field with their selection.
+[v2.1](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.1) | Removed item_info from dialog form
+[v2.0](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.0) | Updated to work with the Aras 11.0 SP9+ tabbed client.
+[v1.0](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v1.0) | First release. Though built and tested using Aras 11.0 SP7, this project may function in older releases of Aras 11.0 and Aras 10.0.
 
 #### Supported Aras Versions
 
 Project | Aras
 --------|------
-[v2.2](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.2) | 11.0 SP9, 11.0 SP12
-[v2.1](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.1) | 11.0 SP9
-[v2.0](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v2.0) | 11.0 SP9
-[v1.0](https://github.com/ArasLabs/custom-model-dialog/releases/tag/v1.0) | 11.0 SP7
+[v2.3](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.3) | 11.0 SP12
+[v2.2](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.2) | 11.0 SP9, 11.0 SP12
+[v2.1](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.1) | 11.0 SP9
+[v2.0](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.0) | 11.0 SP9
+[v1.0](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v1.0) | 11.0 SP7
 
 ## Installation
 
@@ -61,7 +63,7 @@ You are now ready to login to Aras and try out a custom modal dialog.
     * Optional: Click the **Search Parameter 3** button and choose a Part item for the Parameter 3 field.
 5. Click **Submit**.
 
-![Custom model dialog](./Screenshots/result.png)
+![Custom modal dialog](./Screenshots/result.png)
 
 The modal dialog will close and an alert will appear, showing the values of param1, param2, and param3 that were returned by the modal dialog.
 
