@@ -69,6 +69,17 @@ You are now ready to login to Aras and try out a custom modal dialog.
 
 The modal dialog will close and an alert will appear, showing the values of param1, param2, and param3 that were returned by the modal dialog.
 
+### Sample 2: Aras Maximizable Modal Dialog
+
+![Custom modal dialog](./Screenshots/max-dialog.gif)
+
+1. Login to Aras.
+2. Navigate to **Design > Parts** in the table of contents (TOC).
+3. Right click on a Part item in the main grid and select **Open Maximizable Modal Dialog**.
+4. To maximize the modal dialog, click the square icon in the top right corner of the dialog. Click it again to return the dialog to its original size.
+
+This sample uses the same form and logic as the first sample, so everything other than the resizing behavior is the same. The only difference is that the method `labs_CallMaxModalDialog` calls `topWnd.ArasModules.MaximazableDialog.show()` instead of the usual `topWnd.ArasModules.Dialog.show()`.
+
 ## Contributing
 
 1. Fork it!
