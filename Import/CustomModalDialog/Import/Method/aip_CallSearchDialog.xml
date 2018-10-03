@@ -10,12 +10,15 @@
 var param = {
     aras: top.aras, 
     itemtypeName: 'Part', // tbd: use inArgs
-    multiselect: false };
+    multiselect: false,
+    type: 'SearchDialog',
+    dialogHeight: 450,
+    dialogWidth: 700,
+    resizable: true
+};
     
-var options = { dialogHeight:450, dialogWidth:700, resizable:true};	
 var searchedItem;
-		
-param.callback =  function(dlgRes){
+var callback =  function(dlgRes){
     if(!dlgRes) {
 	    return;
 	}
@@ -28,10 +31,10 @@ param.callback =  function(dlgRes){
     var table = getFieldByName("searchResult").getElementsByTagName("input")[0];
 	table.setAttribute("value", keyed_name);
 };
-			
+
 var wnd = top.aras.getMainWindow();
 wnd = wnd === top ? wnd.main : top;
-top.aras.modalDialogHelper.show('SearchDialog', wnd, param);]]></method_code>
+wnd.ArasModules.Dialog.show('iframe', param).promise.then(callback);]]></method_code>
   <method_type>JavaScript</method_type>
   <name>aip_CallSearchDialog</name>
  </Item>

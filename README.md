@@ -8,6 +8,7 @@ This project and the following release notes have been migrated from the old Ara
 
 Release | Notes
 --------|--------
+[v2.4](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.4) | Introduced an example of openeing an HTML page from a modal dialog. Tested for 11.0 SP15.
 [v2.3.1](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.3.1) | Fixed a typo in the import package - was causing invalid AML.
 [v2.3](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.3) | Added a new action/method to demonstrate how to call a dialog that can be maximized. Tested in 11 SP12, but may work in 11 SP9-11.
 [v2.2](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.2) | Added field to demonstrate use of search dialog. Clicking the "Search Parameter 3" button programmatically calls the default Aras search dialog. Allows the user to search for a Part and populate the "Parameter 3" field with their selection.
@@ -19,6 +20,7 @@ Release | Notes
 
 Project | Aras
 --------|------
+[v2.4](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.4) | 11.0 SP15
 [v2.3.1](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.3.1) | 11.0 SP12
 [v2.3](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.3) | 11.0 SP12
 [v2.2](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.2) | 11.0 SP9, 11.0 SP12
@@ -38,6 +40,15 @@ Project | Aras
 3. Custom Modal Dialog import package
 
 ### Install Steps
+
+#### Code tree Installation
+1. Backup your code tree and store the archive in a safe place
+2. Navigate to your local `..\CustomModalDialog\` folder
+3. Copy the `\Innovator\` folder
+4. Paste this at the root of your install directory
++ By default this is `C:\Program Files\Aras\Innovator\`
+
+#### Database Installation
 
 1. Backup your database and store the BAK file in a safe place.
 2. Open up the Aras Package Import tool.
@@ -82,6 +93,15 @@ The modal dialog will close and an alert will appear, showing the values of para
 
 This sample uses the same form and logic as the first sample, so everything other than the resizing behavior is the same. The only difference is that the method `labs_CallMaxModalDialog` calls `topWnd.ArasModules.MaximazableDialog.show()` instead of the usual `topWnd.ArasModules.Dialog.show()`.
 
+### Sample 3: Aras Modal Dialog with HTML Page
+![Custom modal dialog](./Screenshots/html-dialog.png)
+
+1. Login to Aras.
+2. Navigate to **Design > Parts** in the table of contents (TOC).
+3. Right click on a Part item in the main grid and select **Open Custom Modal Dialog (HTML)**.
+
+This sample uses a custom HTML Page instead of the Form used in the first and second sample, but the logic behind it is very similar. The dialog is still opened with `topWnd.ArasModules.Dialog.show()` but instead of configuring the dialog parameters with `content: ShowFormAsADialog.html`, we instead pass in the relative path to another HTML file in the code tree like `content: ../customers/custom_dialog_page.html`.
+
 ## Contributing
 
 1. Fork it!
@@ -99,6 +119,7 @@ Created by Eli Donahue for Aras Labs. @EliJDonahue
 Contributions by:
 * @AngelaIp
 * @mptap
+* @cgillis-aras
 
 ## License
 

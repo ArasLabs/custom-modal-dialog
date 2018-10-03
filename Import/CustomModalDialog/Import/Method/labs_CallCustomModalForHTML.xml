@@ -1,0 +1,36 @@
+﻿<AML>
+ <Item type="Method" id="D5679DBAD8024EF89EAD1942965AE942" action="add">
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[// Aras Labs Project
+// Christopher Gillis - 10/3/18
+// 
+// Call a custom HTML page in a modal dialog
+// Perform some action based on the values returned from dialog
+
+var topWnd = aras.getMostTopWindowWithAras(window);
+topWnd = topWnd.main || topWnd;
+
+// Here we want to pass in the relative path to the HTML file in our code tree.
+// The folder we start in is the /Innovator/Client/scripts/ folder, and our HTML
+// page is stored at /Innovator/Client/customers/custom_dialog_page.html
+// So we have to go back one folder by using '../' and then go to the customers folder
+var pathToHTML = '../customer/custom_dialog_page.html';
+
+// Get form parameters
+var params = {
+    title: 'Test Dialog from HTML Page',
+    aras: aras,
+    dialogWidth: 800,
+    dialogHeight: 400,
+    content: pathToHTML
+};
+
+topWnd.ArasModules.Dialog.show('iframe', params).promise.then(function(dlgRes) {
+    debugger;
+    // Perform logic using dialog result here
+    return alert("Param 1: " + dlgRes["parameter_1"] + " ... Param 2: " + dlgRes["parameter_2"] + " ... Param 3: " + dlgRes["parameter_3"]);
+});]]></method_code>
+  <method_type>JavaScript</method_type>
+  <name>labs_CallCustomModalForHTML</name>
+ </Item>
+</AML>
