@@ -7,4 +7,8 @@
 		<related_id keyed_name="labs_OpenMaxModalDialog" type="Action">0807F3255CFD45C092B8CA16D69897E6</related_id>
 		<source_id keyed_name="Part" type="ItemType" name="Part">4F1AC04A2B484F3ABA4E20DB63808A88</source_id>
 	</Item>
+	<Item type="Item Action" action="add" id="EE18A327F6524D0881F5A5DBFE43994D">
+		<related_id keyed_name="labs_CallCustomModalForHTML" type="Action">C6F0860AB30F448283BF954E5590D6C7</related_id>
+		<source_id keyed_name="Part" type="ItemType" name="Part">4F1AC04A2B484F3ABA4E20DB63808A88</source_id>
+	</Item>
 </AML>

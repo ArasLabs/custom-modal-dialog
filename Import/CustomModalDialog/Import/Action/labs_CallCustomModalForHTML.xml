@@ -1,0 +1,15 @@
+﻿<AML>
+ <Item type="Action" id="C6F0860AB30F448283BF954E5590D6C7" action="add">
+  <item_query />
+  <label xml:lang="en">Open Custom Modal Dialog (HTML)</label>
+  <location>client</location>
+  <method keyed_name="labs_CallCustomModalForHTML" type="Method">
+   <Item type="Method" action="get" select="id">
+    <name>labs_CallCustomModalForHTML</name>
+   </Item>
+  </method>
+  <target>none</target>
+  <type>item</type>
+  <name>labs_CallCustomModalForHTML</name>
+ </Item>
+</AML>

@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../styles/default.css" />
+    <style>
+        .dialog_input {
+            padding-bottom: 20px;
+        }
+
+        .input_label {
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript">
+        // You can pass in any number of arguments to this HTML page
+        window.dialogArguments = window.frameElement.dialogArguments;
+        // We'll assume an aras object was passed in so we can do stuff like item manipulation
+        var aras = dialogArguments.aras;
+        // We'll also assume a title is passed in
+        document.title = dialogArguments.title;
+    </script>
+    <script>
+        onload = function() {
+            // Do any setup stuff once the dialog loads
+        }
+
+        // Set up the code to launch the search dialog for parameter 3
+        function onSearch() {
+            var param = {
+                aras: aras,
+                itemtypeName: 'Part',
+                multiselect: false,
+                type: 'SearchDialog'
+            };
+
+            var topWnd = aras.getMostTopWindowWithAras();
+            (topWnd || window).ArasModules.Dialog.show('iframe', param).promise.then(function(dlgRes) {
+                if (!dlgRes) {
+                    return;
+                }
+
+                var searchedItem = dlgRes.item;
+                if (!searchedItem) {
+                    return;
+                }
+                var keyed_name = top.aras.getKeyedNameEx(searchedItem);
+                var input = document.getElementById("parameter_3_text");
+                input.value = keyed_name;
+            })
+        }
+
+        function onSubmit() {
+            // get parameter_1 field
+            var wrapper1 = document.getElementById("parameter_1");
+            var p1 = wrapper1.getElementsByTagName("textarea")[0];
+
+            // get parameter_2 field
+            var wrapper2 = document.getElementById("parameter_2");
+            var p2 = wrapper2.getElementsByTagName("input")[0];
+
+            // get parameter_3 field
+            var wrapper3 = document.getElementById("parameter_3");
+            var p3 = wrapper3.getElementsByTagName("input")[0];
+
+            // Confirm fields were correctly retrieved
+            if (!p1) {
+                alert("Can't find field parameter_1");
+                return;
+            }
+            if (!p2) {
+                alert("Can't find field parameter_2");
+                return;
+            }
+            if (!p3) {
+                alert("Can't find field paramter_3");
+                return;
+            }
+
+            // return entered values
+            var retVal = {};
+            retVal["parameter_1"] = p1.value;
+            retVal["parameter_2"] = p2.checked;
+            retVal["parameter_3"] = p3.value;
+            dialogArguments.dialog.close(retVal);
+        }
+    </script>
+</head>
+<body>
+    <h3>HTML Page for Custom Dialog</h3>
+    <div class="dialog_input dialog_textarea" id="parameter_1">
+        <div class="input_label">Parameter 1</div>
+        <textarea style="height: 50px; width: 350px;"></textarea>
+    </div>
+    <div class="dialog_input dialog_checkbox" id="parameter_2">
+        <div class="input_label">Parameter 2</div>
+        <input type="checkbox">
+    </div>
+    <div class="dialog_input dialog_item" id="parameter_3">
+        <div class="input_label">Parameter 3</div>
+        <input type="text" id="parameter_3_text">
+        <button class="input_button" onclick="onSearch()">Search</button>
+    </div>
+    <button class="submit_button" onclick="onSubmit()">Submit</button>
+</body>
+</html>
+
