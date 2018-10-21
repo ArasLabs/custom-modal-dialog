@@ -8,7 +8,6 @@ This project and the following release notes have been migrated from the old Ara
 
 Release | Notes
 --------|--------
-[v2.4](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.4) | Introduced an example of opening an HTML page from a modal dialog. Tested for 11.0 SP15.
 [v2.3.1](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.3.1) | Fixed a typo in the import package - was causing invalid AML.
 [v2.3](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.3) | Added a new action/method to demonstrate how to call a dialog that can be maximized. Tested in 11 SP12, but may work in 11 SP9-11.
 [v2.2](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.2) | Added field to demonstrate use of search dialog. Clicking the "Search Parameter 3" button programmatically calls the default Aras search dialog. Allows the user to search for a Part and populate the "Parameter 3" field with their selection.
@@ -20,7 +19,6 @@ Release | Notes
 
 Project | Aras
 --------|------
-[v2.4](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.4) | 11.0 SP15
 [v2.3.1](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.3.1) | 11.0 SP12
 [v2.3](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.3) | 11.0 SP12
 [v2.2](https://github.com/ArasLabs/custom-modal-dialog/releases/tag/v2.2) | 11.0 SP9, 11.0 SP12
