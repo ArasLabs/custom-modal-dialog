@@ -114,12 +114,12 @@ For more information on contributing to this project, another Aras Labs project,
 
 ## Credits
 
-Created by Eli Donahue for Aras Labs. @EliJDonahue
+Created by [Eli Donahue](https://github.com/EliJDonahue) for Aras Labs. 
 
 Contributions by:
-* @AngelaIp
-* @mptap
-* @cgillis-aras
+* [AngelaIp](https://github.com/AngelaIp)
+* [Manjiri Tapaswi](https://github.com/mptap)
+* [cgillis-aras](https://github.com/cgillis-aras)
 
 ## License
 
