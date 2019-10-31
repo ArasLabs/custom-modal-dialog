@@ -26,7 +26,6 @@ var params = {
 };
 
 topWnd.ArasModules.Dialog.show('iframe', params).promise.then(function(dlgRes) {
-    debugger;
     // Perform logic using dialog result here
     return alert("Param 1: " + dlgRes["parameter_1"] + " ... Param 2: " + dlgRes["parameter_2"] + " ... Param 3: " + dlgRes["parameter_3"]);
 });]]></method_code>
